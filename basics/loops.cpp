@@ -2,19 +2,25 @@
 // Author: Salah Eddine Ghamri
 // Year:2019 
 
-#include <iostream>
-using namespace std;
-
-
-int func(int a, int b){
-    return a + b;
-}
+#include <stdio.h>
 
 int main(int argc, char** argv){
-    printf("The number of arguments is %d\n", argc);
-    // list all arguments
-    for(int j=0; j<=argc-1; j++){
-        printf("Argument %d is %s\n", j, argv[j]);
+    // for loop
+    for(int i=0; i<=10; i++){
+        printf("For ... The index is %d\n", i);
     }
-    return 0; 
+
+    //while loop
+    int i = 0;
+    while(i <= 10){
+        printf("While... The index is %d\n", i);
+        i++;
+    }
+
+    //do while
+    i = 0;
+    do {
+        printf("Do ..while ..The index is %d\n", i);
+        i++;
+    } while( i <= 10);
 }
