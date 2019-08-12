@@ -5,13 +5,15 @@
 
 #include <vector>
 #include <iostream>
+#include <algorithm>
 
 using namespace std; 
-
 
 // we define a vector of int 
 vector<int> vec = {31, 42, 53, 64}; 
 
+// sorting function
+bool order(int i, int j) { return (i>j); }
 
 void vectordisplay(vector<int> a){
     for(int i = 0; i < a.size(); ++i){
@@ -35,8 +37,26 @@ int main(){
 
     //-------------------
     // add values using push_back
-    vec.push_back(75);
 
+    vec.push_back(31);
+
+    vectordisplay(vec);
+
+    // Vector limits
+    cout << "limits calculation ....." << endl;
+
+    int max{};
+    int min{};
+
+    max = *max_element(vec.begin(), vec.end());
+    min = *min_element(vec.begin(), vec.end());
+
+    cout << "the max of vec is " << max << endl;
+    cout << "the min of vec is " << min << endl;
+
+    // Sorting
+    cout << "Sorting ...... " << endl;
+    sort(vec.begin(), vec.end(), order);
     vectordisplay(vec);
 
     return EXIT_SUCCESS;
