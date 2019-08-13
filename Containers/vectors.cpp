@@ -6,11 +6,15 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <string>
 
 using namespace std; 
 
 // we define a vector of int 
 vector<int> vec = {31, 42, 53, 64}; 
+
+// vector of string
+vector<string> vecstr = {"Salah", "Eddine", "Ghamri"};
 
 // sorting function
 bool order(int i, int j) { return (i>j); }
@@ -18,6 +22,13 @@ bool order(int i, int j) { return (i>j); }
 void vectordisplay(vector<int> a){
     for(int i = 0; i < a.size(); ++i){
         cout << "Value of the index " << i << " is " << a[i] << endl;
+    }
+}
+
+template<class T>
+void vectordisplayall(T a){
+    for(auto i = a.begin(); i!=a.end(); i++){
+        cout << *i << endl;
     }
 }
 
@@ -57,7 +68,10 @@ int main(){
     // Sorting
     cout << "Sorting ...... " << endl;
     sort(vec.begin(), vec.end(), order);
-    vectordisplay(vec);
+    vectordisplayall(vec);
+
+    // vector of strings
+    vectordisplayall(vecstr);
 
     return EXIT_SUCCESS;
 }
