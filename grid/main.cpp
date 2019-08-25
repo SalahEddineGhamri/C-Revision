@@ -9,5 +9,7 @@ int main()
 {
     Grid map(10, 10);
     map.setter(4, 5, 2.0);
+    map.dispData();
+    std::cout << map.getter(4, 5) << std::endl;
     return 0;
 }

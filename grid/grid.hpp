@@ -15,11 +15,14 @@ class Grid
 {
     private:
         GridArray Data;
+        int size_x;
+        int size_y;
         
     public:
         Grid(int size_x, int size_y);
         void setter(int x, int y, double value);
         double getter(int x, int y);
+        void dispData();
         ~Grid();
 };
 #endif 
