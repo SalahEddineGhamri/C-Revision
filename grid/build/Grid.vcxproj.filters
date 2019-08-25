@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Utilisateur\Documents\c++_playground\C-Revision\grid\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Utilisateur\Documents\c++_playground\C-Revision\grid\grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Utilisateur\Documents\c++_playground\C-Revision\grid\grid.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Utilisateur\Documents\c++_playground\C-Revision\grid\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C5B3AB7E-D81E-3D87-BEEF-8D3A598F7A79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2FA8B6E7-46E2-307E-966B-D18D7BFACD49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
